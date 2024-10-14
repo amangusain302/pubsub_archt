@@ -1,0 +1,36 @@
+{
+    "info": {
+      "name": "PubSub System API",
+      "_postman_id": "abcd-1234-efgh-5678",
+      "description": "Collection to test the PubSub system APIs",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Receiver Service - POST /receiver",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"user\": \"Harry\",\n  \"class\": \"Comics\",\n  \"age\": 22,\n  \"email\": \"harry@potter.com\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/receiver",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["receiver"]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  

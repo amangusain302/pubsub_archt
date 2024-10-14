@@ -1,0 +1,4 @@
+/listener-service/node_modules
+/receiver-service/node_modules
+/listener-service/.env
+/receiver-service/.env
