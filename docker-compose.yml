@@ -5,8 +5,8 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - MONGO_URI=mongodb://mongo:27017/receiver
-      - REDIS_HOST=redis
+      - MONGO_URI=mongodb://mongo:27017/recevier-service-db
+      - REDIS_HOST=localhost
       - REDIS_PORT=6379
     depends_on:
       - mongo
@@ -17,8 +17,8 @@ services:
     ports:
       - "3001:3001"
     environment:
-      - MONGO_URI=mongodb://mongo:27017/listener
-      - REDIS_HOST=redis
+      - MONGO_URI=mongodb://mongo:27017/listener-service-db
+      - REDIS_HOST=localhost
       - REDIS_PORT=6379
     depends_on:
       - mongo

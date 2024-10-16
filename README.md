@@ -53,7 +53,7 @@ Ensure that you have Docker and Docker Compose installed. If you don't have Dock
 
 3. **Running the System with Docker Compose**
 
-    docker-compose up --build
+    docker-compose up
 
 4. **Stopping the Docker Containers**
     To stop all the running services, press Ctrl+C or run the following command:
